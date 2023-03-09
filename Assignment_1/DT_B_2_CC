@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="abnormal_short_term_variability <= 59.5\ngini = 0.295\nsamples = 1160\nvalue = [960, 160, 40]\nclass = 1", fillcolor="#ea9a61"] ;
+1 [label="gini = 0.08\nsamples = 984\nvalue = [943, 35, 6]\nclass = 1", fillcolor="#e68642"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="abnormal_short_term_variability <= 78.5\ngini = 0.449\nsamples = 176\nvalue = [17, 125, 34]\nclass = 2", fillcolor="#80eeae"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="accelerations <= 0.003\ngini = 0.347\nsamples = 156\nvalue = [17, 124, 15]\nclass = 2", fillcolor="#67eb9e"] ;
+2 -> 3 ;
+4 [label="histogram_width <= 9.5\ngini = 0.238\nsamples = 142\nvalue = [4, 123, 15]\nclass = 2", fillcolor="#57e994"] ;
+3 -> 4 ;
+5 [label="gini = 0.165\nsamples = 11\nvalue = [0, 1, 10]\nclass = 3", fillcolor="#8e4de8"] ;
+4 -> 5 ;
+6 [label="gini = 0.13\nsamples = 131\nvalue = [4, 122, 5]\nclass = 2", fillcolor="#47e78a"] ;
+4 -> 6 ;
+7 [label="gini = 0.133\nsamples = 14\nvalue = [13, 1, 0]\nclass = 1", fillcolor="#e78b48"] ;
+3 -> 7 ;
+8 [label="gini = 0.095\nsamples = 20\nvalue = [0, 1, 19]\nclass = 3", fillcolor="#8843e6"] ;
+2 -> 8 ;
+}
